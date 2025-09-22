@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БиоМир - Открывая тайны природы</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header id="site-header">
+        <div class="header-container">
+            <!-- Логотип и название -->
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="site-title">
+                    <h1>БиоМир</h1>
+                    <p class="tagline">Открывая тайны природы</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav id="main-navigation">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#research" class="nav-link">Исследования</a></li>
+                <li><a href="#organisms" class="nav-link">Организмы</a></li>
+                <li><a href="#education" class="nav-link">Образование</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main id="main-content">
+        <!-- Вводный раздел -->
+        <section id="home" class="hero-section">
+            <div class="content-container">
+                <h2>Добро пожаловать в мир биологии</h2>
+                <p class="hero-description">
+                    Изучайте живые организмы, открывайте закономерности природы и узнавайте 
+                    о последних научных достижениях в области биологических наук.
+                </p>
+            </div>
+        </section>
+
+        <!-- Раздел с таблицей -->
+        <section id="organisms" class="data-section">
+            <div class="content-container">
+                <h2>Классификация живых организмов</h2>
+                <p>Основные группы организмов и их характеристики</p>
+                
+                <div class="table-wrapper">
+                    <table id="organisms-table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Царство</th>
+                                <th>Тип организации</th>
+                                <th>Способ питания</th>
+                                <th>Примеры</th>
+                                <th>Количество видов</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="even-row">
+                                <td colspan="3">Прокариоты (безъядерные)</td>
+                                <td>Бактерии, архебактерии</td>
+                                <td>~10,000</td>
+                            </tr>
+                            <tr class="odd-row">
+                                <td>Растения</td>
+                                <td>Многоклеточные</td>
+                                <td>Автотрофы</td>
+                                <td>Деревья, травы, мхи</td>
+                                <td>~400,000</td>
+                            </tr>
+                            <tr class="even-row">
+                                <td>Животные</td>
+                                <td>Многоклеточные</td>
+                                <td>Гетеротрофы</td>
+                                <td>Млекопитающие, птицы, рыбы</td>
+                                <td>~1,500,000</td>
+                            </tr>
+                            <tr class="odd-row">
+                                <td>Грибы</td>
+                                <td>Многоклеточные</td>
+                                <td>Сапротрофы</td>
+                                <td>Шампиньоны, дрожжи</td>
+                                <td>~100,000</td>
+                            </tr>
+                            <tr class="even-row">
+                                <td>Протисты</td>
+                                <td>Одноклеточные</td>
+                                <td>Различный</td>
+                                <td>Амёбы, инфузории</td>
+                                <td>~80,000</td>
+                            </tr>
+                            <tr class="odd-row">
+                                <td colspan="2">Вирусы (неклеточные)</td>
+                                <td>Паразиты</td>
+                                <td>Грипп, COVID-19</td>
+                                <td>~5,000</td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="4"><strong>Общее количество описанных видов</strong></td>
+                                <td><strong>~2,095,000</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Образовательный раздел -->
+        <section id="education" class="info-section">
+            <div class="content-container">
+                <h2>Биологические процессы</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-dna"></i>
+                        <h3>Генетика</h3>
+                        <p>Изучение наследственности и изменчивости живых организмов</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Фотосинтез</h3>
+                        <p>Процесс превращения световой энергии в химическую энергию</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Метаболизм</h3>
+                        <p>Совокупность химических реакций в живых клетках</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section id="contact" class="contact-section">
+            <div class="content-container">
+                <h2>Свяжитесь с нами</h2>
+                <p>Есть вопросы о биологии? Напишите нам!</p>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Выберите тему</option>
+                            <option value="general">Общие вопросы</option>
+                            <option value="research">Исследования</option>
+                            <option value="education">Образование</option>
+                            <option value="collaboration">Сотрудничество</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Отправить сообщение
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer id="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>БиоМир</h3>
+                    <p>Образовательный портал о биологии и природе</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#research">Исследования</a></li>
+                        <li><a href="#organisms">Организмы</a></li>
+                        <li><a href="#education">Образование</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-envelope"></i> info@biomir.ru</p>
+                    <p><i class="fas fa-phone"></i> +7 (xxx) xxx-xx-xx</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 БиоМир. Все права защищены. | Разработано для учебных целей КубГУ</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript для интерактивности -->
+    <script src="script.js"></script>
+</body>
+</html>
